@@ -1,0 +1,212 @@
+/* 말랑멍 웹사이트 — 앱의 색을 그대로 씁니다(assets/mallang.html의 :root).
+   글자에 쓰는 두 색만 예외인데, 그 이유는 아래에 적어 두었습니다.
+   세 페이지가 이 파일 하나를 같이 씁니다. 색을 바꾸려면 여기만 고치면 됩니다. */
+
+:root{
+  --cream:#FBF6EC;
+  --panel:#F3ECDD;
+  --card:#FFFFFF;
+  --ink:#3E5C4A;
+  --accent:#E8A87C;
+  --line:rgba(92,130,103,0.20);
+  --shadow:rgba(90,70,40,0.10);
+
+  /* 글자에 쓰는 두 색만 앱보다 진합니다. 앱의 #5C8267과 #D98C58을 크림색 바탕에
+     그대로 올리면 명암비가 4.0과 2.5까지 떨어져서, 문의 메일 주소처럼 꼭 읽어야
+     하는 글자가 흐려집니다. 여기 값은 크림·패널·흰 카드 어디에 올려도 4.5를 넘습니다.
+     테두리와 강조선에는 아래 --accent(연한 쪽)를 그대로 씁니다. */
+  --moss-deep:#4A6B53;
+  --accent-text:#9C5624;
+}
+
+/* 밤에 여는 사람이 많은 앱이라, 기기가 어두운 모드면 페이지도 따라갑니다. */
+@media (prefers-color-scheme: dark){
+  :root{
+    --cream:#1D2521;
+    --panel:#252F2A;
+    --card:#252F2A;
+    --ink:#E4EBE5;
+    --moss-deep:#9DBDA6;
+    --accent:#E8A87C;
+    --accent-text:#EDB183;
+    --line:rgba(157,189,166,0.20);
+    --shadow:rgba(0,0,0,0.28);
+  }
+}
+
+*{ box-sizing:border-box; }
+
+html{
+  background:var(--cream);
+  -webkit-text-size-adjust:100%;
+}
+
+body{
+  margin:0;
+  padding:0 20px 72px;
+  background:var(--cream);
+  color:var(--ink);
+  font-family:'Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',system-ui,-apple-system,'Segoe UI',sans-serif;
+  font-size:16px;
+  line-height:1.8;
+  word-break:keep-all;      /* 한글이 단어 가운데서 끊기지 않게 */
+  overflow-wrap:break-word; /* 긴 주소는 그래도 넘치지 않게 */
+}
+
+.wrap{ max-width:720px; margin:0 auto; }
+
+/* ---------- 머리말 ---------- */
+
+.site-head{
+  padding:38px 0 22px;
+  border-bottom:1px solid var(--line);
+  margin-bottom:30px;
+}
+.site-head .mark{
+  display:inline-block;
+  font-size:2rem;
+  line-height:1;
+  margin-bottom:12px;
+}
+.site-head h1{
+  margin:0;
+  font-size:1.6rem;
+  font-weight:800;
+  letter-spacing:-0.01em;
+}
+.site-head p{
+  margin:8px 0 0;
+  color:var(--moss-deep);
+  font-size:.95rem;
+}
+
+/* 페이지 사이 이동 */
+.site-nav{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-top:20px;
+}
+.site-nav a{
+  display:inline-block;
+  padding:7px 15px;
+  border-radius:999px;
+  background:var(--panel);
+  color:var(--moss-deep);
+  font-size:.85rem;
+  font-weight:700;
+  text-decoration:none;
+  border:1px solid transparent;
+}
+.site-nav a:hover{ border-color:var(--line); }
+.site-nav a[aria-current="page"]{
+  background:var(--ink);
+  color:var(--cream);
+}
+
+/* 한국어 / English 건너뛰기 */
+.lang-jump{
+  font-size:.85rem;
+  color:var(--moss-deep);
+  margin:0 0 28px;
+}
+.lang-jump a{ color:var(--moss-deep); }
+
+/* ---------- 본문 ---------- */
+
+h2{
+  font-size:1.18rem;
+  font-weight:800;
+  margin:44px 0 14px;
+  padding-top:26px;
+  border-top:1px solid var(--line);
+}
+h2:first-of-type{ border-top:none; padding-top:0; margin-top:0; }
+
+h3{
+  font-size:1rem;
+  font-weight:800;
+  margin:30px 0 6px;
+  color:var(--accent-text);
+}
+
+p{ margin:0 0 14px; }
+
+ul{ margin:0 0 16px; padding-left:22px; }
+li{ margin:5px 0; }
+
+strong{ font-weight:800; }
+
+a{ color:var(--accent-text); }
+
+hr{
+  border:none;
+  border-top:1px solid var(--line);
+  margin:56px 0 40px;
+}
+
+/* 앱 안의 경로를 짚어 줄 때 쓰는 상자 */
+blockquote{
+  margin:0 0 16px;
+  padding:12px 16px;
+  background:var(--panel);
+  border-left:3px solid var(--accent);
+  border-radius:0 10px 10px 0;
+  font-weight:700;
+  font-size:.95rem;
+}
+
+/* 연락처 카드 */
+.card{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:16px;
+  padding:18px 20px;
+  margin:0 0 30px;
+  box-shadow:0 6px 16px var(--shadow);
+}
+.card p:last-child{ margin-bottom:0; }
+.card .label{
+  display:block;
+  font-size:.72rem;
+  font-weight:800;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:var(--moss-deep);
+  margin-bottom:4px;
+}
+
+/* 첫 화면의 큰 링크 */
+.tiles{
+  display:grid;
+  gap:12px;
+  grid-template-columns:1fr;
+  margin:0 0 34px;
+}
+@media (min-width:560px){
+  .tiles{ grid-template-columns:1fr 1fr; }
+}
+.tile{
+  display:block;
+  padding:20px;
+  border-radius:16px;
+  background:var(--card);
+  border:1px solid var(--line);
+  text-decoration:none;
+  color:var(--ink);
+  box-shadow:0 6px 16px var(--shadow);
+}
+.tile:hover{ border-color:var(--accent); }
+.tile b{ display:block; font-size:1.02rem; font-weight:800; margin-bottom:3px; }
+.tile span{ font-size:.86rem; color:var(--moss-deep); }
+
+/* ---------- 꼬리말 ---------- */
+
+.site-foot{
+  margin-top:64px;
+  padding-top:22px;
+  border-top:1px solid var(--line);
+  font-size:.82rem;
+  color:var(--moss-deep);
+}
+.site-foot p{ margin:0 0 6px; }
