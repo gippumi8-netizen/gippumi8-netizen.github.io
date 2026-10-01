@@ -35,11 +35,11 @@
   <h2>자주 묻는 질문</h2>
 
   <h3>로그인을 꼭 해야 하나요?</h3>
-  <p>아니요. 모든 기능을 로그인 없이 쓸 수 있고, 꾸민 내용도 기기에 그대로 저장됩니다.</p>
+  <p>꾸미기와 소리 재생 등 기본 기능은 로그인 없이 쓸 수 있어요. 클라우드 백업은 로그인 후 자동 백업을 켜서 이용해 주세요.</p>
   <p>로그인은 <strong>기기를 바꾸거나 앱을 다시 설치해도 꾸민 내용을 이어서 쓰고 싶을 때</strong>만 필요합니다.</p>
 
   <h3>기기를 바꾸면 꾸민 내용이 따라오나요?</h3>
-  <p>로그인한 상태였다면 따라옵니다. 새 기기에서 같은 계정(카카오 또는 Apple)으로 로그인하면 됩니다.</p>
+  <p>이전 기기에서 자동 백업을 켜고 백업을 완료했다면 가져올 수 있어요. 새 기기에서도 같은 계정(카카오 또는 Apple)으로 로그인하고 메뉴 → 백업 및 복원에서 자동 백업을 켜 주세요. 백업이 완료되지 않은 내용은 복원할 수 없어요.</p>
   <p>로그인하지 않고 쓰셨다면 내용은 이전 기기에만 있습니다. 기기끼리 직접 옮기는 방법은 없습니다.</p>
 
   <h3>카카오로 로그인했는데 Apple로도 로그인하면 어떻게 되나요?</h3>
@@ -49,7 +49,7 @@
   <p>사진은 용량이 커서 기기 저장 공간이 부족하면 저장이 실패할 수 있습니다. 저장에 실패하면 앱이 알림을 띄웁니다.</p>
   <ul>
     <li>기기 저장 공간을 확보한 뒤 다시 시도해 주세요</li>
-    <li>로그인해 두시면 사진이 클라우드에도 보관되어 더 안전합니다</li>
+    <li>로그인 후 자동 백업을 켜고 백업이 완료됐는지 확인해 주세요</li>
   </ul>
 
   <h3>소리가 바로 나오지 않아요</h3>
@@ -67,7 +67,7 @@
   <h3>꾸민 내용을 전부 지우고 싶어요</h3>
   <p>말풍선과 소품은 앱 안에서 하나씩 지울 수 있습니다.</p>
   <p>계정과 클라우드에 올라간 내용까지 모두 지우려면 회원 탈퇴를 해주세요.</p>
-  <blockquote>오른쪽 메뉴 → 하단 로그인 버튼 → 회원 탈퇴</blockquote>
+  <blockquote>메뉴 → 로그인한 계정 → 회원 탈퇴</blockquote>
 
   <h3>회원 탈퇴하면 무엇이 지워지나요?</h3>
   <ul>
@@ -84,7 +84,7 @@
     <li><strong>회원 탈퇴</strong> — 계정과 저장된 내용을 지웁니다. 되돌릴 수 없습니다.</li>
   </ul>
 
-  <h3>아이패드에서도 쓸 수 있나요?</h3>
+  <h3>자동 백업을 끄면 어떻게 되나요?</h3><p>새로운 백업은 중단돼요. 기존 사진과 꾸민 내용의 클라우드 백업은 끈 날부터 90일 동안 보관한 뒤 자동 삭제돼요. 삭제 전에 다시 켜면 삭제 예약이 취소돼요. 기기에 저장된 내용은 그대로 남아요. 로그아웃만으로는 이 삭제 예약이 시작되지 않아요.</p><h3>사진은 어디에 백업되나요?</h3><p>사진은 Cloudflare R2의 비공개 저장소에, 계정과 꾸민 내용은 Supabase에 보관해요. 이전 버전의 사진은 이전·정리 과정에서 Supabase에도 남아 있을 수 있어요. 백업은 무료로 제공해요.</p><h3>끄적 글은 어떻게 지우나요?</h3><p>본인 글의 메뉴에서 삭제할 수 있어요. 끄적은 별도 익명 세션을 사용하므로 일반 계정 탈퇴만으로 삭제되지 않아요. 앱 재설치 등으로 삭제가 어려우면 글 내용과 작성 시각을 이메일로 알려 주세요.</p><p>회원 탈퇴 시 사진 백업은 서버 정리 작업에서 순차 삭제돼요. ‘백업 및 복원’ 안내는 해당 메뉴가 있는 버전에 적용되며 이전 버전은 로그인 중 백업될 수 있어요.</p><h3>아이패드에서도 쓸 수 있나요?</h3>
   <p>네. 가로·세로 모두 지원합니다.</p>
 
   <h2>버그 제보와 건의</h2>
@@ -111,16 +111,16 @@
   </div>
 
   <h3>Do I need an account?</h3>
-  <p>No. Everything works signed out, and your work is saved on your device. Signing in only matters if you want your work to follow you to a new device or survive a reinstall.</p>
+  <p>Core decorating and sound features work without signing in. Cloud backup requires signing in and enabling automatic backup.</p>
 
   <h3>Will my work move to a new device?</h3>
-  <p>Yes, if you were signed in — just sign in with the same provider on the new device. If you never signed in, your work exists only on the original device.</p>
+  <p>Enable automatic backup and complete a backup on the old device first. On the new device, sign in with the same account/provider and enable automatic backup in Menu → Backup and Restore. Content that was not successfully backed up cannot be restored.</p>
 
   <h3>Kakao and Apple sign-in</h3>
   <p>These create separate accounts, each with its own saved work. Pick one and stay with it.</p>
 
   <h3>My photos disappeared.</h3>
-  <p>Photos are large and can fail to save when device storage is low; the app will tell you when that happens. Free up space and try again. Signing in also keeps a copy in the cloud.</p>
+  <p>Photos are large and can fail to save when device storage is low; the app will tell you when that happens. Free up space and try again. Sign in, enable automatic backup and check that the backup completed.</p>
 
   <h3>Sound is slow to start.</h3>
   <p>Sounds are prepared just after launch, which takes a moment. If nothing plays at all, check your device's silent switch, the master volume in the app, and whether another app is using audio.</p>
@@ -130,12 +130,12 @@
 
   <h3>Deleting everything</h3>
   <p>Remove bubbles and decorations individually in the app, or delete your account to also erase what is in the cloud.</p>
-  <blockquote>right-hand menu → sign-in button at the bottom → Delete account</blockquote>
+  <blockquote>Menu → signed-in account → Delete account</blockquote>
 
   <h3>Sign out vs delete account</h3>
   <p>Signing out only disconnects the cloud and leaves your work on the device. Deleting the account erases your account and stored content permanently, including on the device you delete from. Other devices must be cleared separately.</p>
 
-  <h3>iPad</h3>
+  <h3>Turning automatic backup off</h3><p>New uploads stop. Existing photo and decoration backups are retained for 90 days from turning backup off, then automatically deleted. Enabling it again before deletion cancels the schedule. Local device content stays. Signing out alone does not start this deadline.</p><h3>Where are backups stored?</h3><p>Photo backups are private in Cloudflare R2; account and decoration data are in Supabase. Legacy photos may remain in Supabase during migration/cleanup. Backup is free. These instructions apply to versions with Backup and Restore; older versions may back up while signed in.</p><h3>Deleting Notes</h3><p>Use your post menu to delete it. Notes use a separate anonymous session, so deleting the main account does not remove these posts. If you lose access after reinstalling, email the post text and time for help.</p><p>After account deletion, cloud photo backups are removed through scheduled cleanup rather than simultaneously from all stores.</p><h3>iPad</h3>
   <p>Supported in both portrait and landscape.</p>
 
   <h3>Reporting a bug</h3>

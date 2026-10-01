@@ -13,7 +13,7 @@
   <header class="site-head">
     <span class="mark">🐾</span>
     <h1>말랑멍 개인정보처리방침</h1>
-    <p>시행일: 2026년 8월 5일</p>
+    <p>시행일: 2026년 10월 1일</p>
     <nav class="site-nav">
       <a href="index.html">홈</a>
       <a href="support.html">고객지원</a>
@@ -26,10 +26,10 @@
   <p>말랑멍(이하 "앱")은 이용자의 개인정보를 소중히 다룹니다. 이 문서는 앱이 어떤 정보를 다루고, 어디에 보관하며, 어떻게 지울 수 있는지 설명합니다.</p>
 
   <h2>1. 로그인하지 않고 쓸 때</h2>
-  <p>앱의 모든 기능은 로그인 없이 사용할 수 있습니다. 로그인하지 않으면 <strong>꾸민 내용은 기기 안에만 저장되며, 외부로 전송되지 않습니다.</strong></p>
+<p>꾸미기와 소리 재생 등 기본 기능은 로그인 없이 이용할 수 있습니다. 꾸민 내용과 사진은 기기에 저장되며, 클라우드 백업은 로그인 후 자동 백업을 켜서 이용합니다. 끄적 게시·신고와 광고 서비스는 로그인 여부와 별개로 서버 통신이 발생합니다.</p><p>아래 자동 백업 안내는 ‘백업 및 복원’ 메뉴가 있는 버전에 적용됩니다. 이전 버전은 로그인 상태에서 백업이 수행될 수 있습니다.</p>
 
   <h2>2. 수집하는 정보</h2>
-  <p>로그인한 경우에만 아래 정보를 수집합니다.</p>
+  <p>이용하는 기능에 따라 아래 정보를 처리합니다.</p>
 
   <h3>계정 정보</h3>
   <p>카카오 또는 Apple 로그인을 통해 받습니다.</p>
@@ -40,7 +40,7 @@
   </ul>
   <p>앱은 카카오·Apple의 비밀번호를 받지도, 보관하지도 않습니다.</p>
 
-  <h3>이용자가 만든 내용</h3>
+  <h3>이용자가 만든 내용</h3><p>자동 백업을 켜면 다음 내용과 사진을 계정에 연결해 백업합니다.</p>
   <ul>
     <li>선택한 장소와 배경 설정 (하늘, 조명 등)</li>
     <li>캐릭터의 표정과 색</li>
@@ -51,7 +51,7 @@
     <li>앱 표시 언어</li>
   </ul>
 
-  <h2>3. 광고</h2>
+  <h3>끄적 게시판</h3><p>글 내용, 작성 시각, 익명 이용자 식별자와 표시 이름을 처리합니다. 글과 표시 이름은 다른 이용자에게 공개됩니다. 신고 시에는 신고 대상 글, 신고자 식별자와 신고 시각을 처리합니다. 익명 세션은 카카오·Apple 로그인 계정과 별도로 관리됩니다.</p><h3>번역</h3><p>번역 기능을 지원하는 앱에서는 Google ML Kit로 기기 안에서 글을 번역합니다. 번역할 글을 번역 서버에 보내지 않습니다. 필요한 언어 모델을 처음 다운로드할 때 인터넷 연결이 필요합니다.</p><h3>백업 관리</h3><p>백업 활성화 여부, 계정 식별자, 삭제 예정 시각 등 백업과 삭제 처리에 필요한 관리 정보를 처리합니다.</p><h2>3. 광고</h2>
   <p>앱은 Google이 제공하는 광고 서비스(Google AdMob)를 통해 광고를 표시합니다. 광고는 Google이 직접 송출하며, 이 과정에서 Google이 아래 정보를 수집할 수 있습니다.</p>
   <ul>
     <li>광고 식별자 (iOS의 광고 추적 허용 여부에 따름)</li>
@@ -83,34 +83,20 @@
     <li>이용자를 식별해 본인의 저장 내용을 불러오기</li>
     <li>기기를 바꾸거나 앱을 다시 설치해도 꾸민 내용을 유지하기</li>
   </ul>
-  <p>이 외의 목적으로 사용하거나, 제3자에게 판매·제공하지 않습니다.</p>
+  <p>끄적 게시·조회·신고 처리, 기기 내 번역, 백업 접근 제어와 예약 삭제에도 사용합니다. 개인정보를 판매하지 않으며, 아래 서비스 제공업체를 통해 필요한 저장·처리를 수행합니다.</p>
 
   <h2>6. 보관 위치</h2>
-  <ul>
-    <li><strong>기기 안</strong>: 꾸민 내용은 항상 기기에도 저장됩니다.</li>
-    <li><strong>클라우드</strong>: 로그인한 경우 Supabase Inc.가 운영하는 서버에 저장됩니다. 저장된 내용은 접근 제어 정책으로 잠겨 있어, 본인 계정으로만 읽고 쓸 수 있습니다. 사진은 비공개 저장소에 보관됩니다.</li>
-  </ul>
-  <p>서버가 국외에 위치할 수 있으며, 이 경우 개인정보가 국외로 이전되어 보관됩니다.</p>
+<ul><li><strong>기기:</strong> 꾸민 내용과 사진을 로컬에 저장합니다.</li><li><strong>Supabase:</strong> 계정 정보, 꾸민 내용의 클라우드 백업, 끄적 글과 신고 정보를 처리합니다.</li><li><strong>Cloudflare R2:</strong> 사진 백업을 비공개 저장소에 보관합니다. 기존 버전의 사진은 이전·정리 과정에서 Supabase Storage에도 남아 있을 수 있습니다.</li><li><strong>Cloudflare Workers:</strong> 백업 요청을 처리하고, 백업 상태와 삭제 예정 시각 등을 관리합니다.</li></ul><p>개인 백업은 계정 인증과 접근 제어를 통해 제공됩니다. 공개 게시판인 끄적은 별도입니다. 서비스 제공업체의 서버는 국외에 위치할 수 있습니다.</p>
 
   <h2>7. 보관 기간과 삭제</h2>
-  <p>수집한 정보는 계정이 유지되는 동안 보관하며, 이용자가 삭제하면 곧바로 지웁니다.</p>
-  <p><strong>앱 안에서 직접 계정을 삭제할 수 있습니다.</strong></p>
-  <blockquote>오른쪽 메뉴 → 하단 로그인 버튼 → 회원 탈퇴</blockquote>
-  <p>탈퇴하면 아래가 함께 삭제되며, 되돌릴 수 없습니다.</p>
-  <ul>
-    <li>계정 정보</li>
-    <li>클라우드에 저장된 꾸민 내용과 사진</li>
-    <li>탈퇴를 실행한 기기에 저장된 꾸민 내용</li>
-  </ul>
-  <p>다른 기기에 저장된 내용은 그 기기에서 앱을 삭제하거나 그 기기에서 탈퇴해야 지워집니다. 앱이 원격으로 다른 기기의 저장 공간을 지울 수는 없습니다.</p>
-  <p>로그아웃은 계정을 삭제하지 않습니다. 클라우드 연결만 끊고, 기기에 저장된 내용은 남습니다.</p>
+<ul><li><strong>계정 정보:</strong> 계정을 유지하는 동안 보관하며 회원 탈퇴 시 삭제합니다.</li><li><strong>클라우드 백업:</strong> 자동 백업이 켜져 있는 동안 유지합니다. 끄면 새로운 업로드가 중단되고, 끈 시점부터 90일이 지나면 기존 사진과 꾸민 내용의 클라우드 백업을 자동 삭제합니다. 삭제 전에 다시 켜면 삭제 예약이 취소됩니다.</li><li><strong>회원 탈퇴:</strong> 계정과 연결된 백업을 삭제 대상으로 처리합니다. 사진 등은 예약된 서버 정리 작업에서 순차 삭제되며, 장애 시 재시도하므로 모든 저장소에서 동시에 삭제되는 것은 아닙니다.</li><li><strong>끄적:</strong> 글은 작성자가 삭제하거나 운영자가 삭제할 때까지 보관합니다. 신고 정보는 해당 글 삭제 시 함께 삭제됩니다. 운영상 숨김 처리는 삭제와 다릅니다.</li></ul><p>앱의 메뉴에서 로그인한 계정의 <strong>회원 탈퇴</strong>를 이용할 수 있습니다. 탈퇴 성공 시 해당 기기의 꾸민 내용도 삭제합니다. 다른 기기의 로컬 내용은 원격으로 삭제하지 않습니다.</p><p>로그아웃만으로 계정이나 백업이 삭제되거나 90일 삭제 예약이 시작되지는 않습니다. 90일 보관은 자동 백업을 끈 시점부터 적용되며 기기 내 저장본에는 적용되지 않습니다.</p><p>끄적은 별도 익명 세션을 사용하므로 카카오·Apple 계정 탈퇴와 별도로 글을 삭제해야 합니다. 앱 재설치 등으로 본인 글 삭제가 어려우면 글 내용과 작성 시각을 문의 이메일로 보내 주세요. 확인 후 처리합니다.</p>
 
   <h2>8. 이용자의 권리</h2>
   <p>이용자는 언제든지 아래 권리를 행사할 수 있습니다.</p>
   <ul>
     <li>저장된 내용의 열람 (앱에서 바로 확인할 수 있습니다)</li>
     <li>수정 및 삭제 (앱에서 직접 지우거나 회원 탈퇴)</li>
-    <li>처리 정지 (로그아웃 또는 회원 탈퇴)</li>
+    <li>새로운 백업 중단 (자동 백업 끄기), 삭제 및 처리 관련 요청 (회원 탈퇴 또는 문의)</li>
   </ul>
   <p>문의가 필요하면 아래 연락처로 알려주시면 확인 후 답변드립니다.</p>
 
@@ -131,15 +117,10 @@
   <hr>
 
   <h1 id="english">Privacy Policy (English)</h1>
-  <p>Effective: August 5, 2026</p>
+  <p>Effective: October 1, 2026</p>
 
   <h2>Using the app without an account</h2>
-  <p>Every feature works without signing in. If you do not sign in, <strong>what you make stays on your device and is never sent anywhere.</strong></p>
-
-  <h2>What is collected</h2>
-  <p>Only when you sign in.</p>
-  <p><strong>Account information</strong>, received from Kakao or Apple sign-in: a user identifier, your email address and display name where the provider supplies them. The app never receives or stores your Kakao or Apple password.</p>
-  <p><strong>What you make</strong>: the place and background you choose, your character's expression and colour, decorations you place, speech bubbles and the text in them, photos you add to bubbles, which sounds are on and their volume, and your language setting.</p>
+<p>Core features such as decorating and playing sounds work without signing in. Work and photos are saved locally. Cloud backup requires signing in and enabling automatic backup. Notes posting/reporting and advertising communicate with servers independently of sign-in.</p><p>The backup-toggle instructions apply to versions with Backup and Restore. Older versions may back up while signed in.</p><h2>What is collected</h2><p>Depending on the features used: account identifiers, email and display name supplied by Kakao or Apple; backed-up scenes, character settings, decorations, bubble text and photos, sound settings and language preferences. We do not receive or store your provider password.</p><p>Notes uses a separate anonymous session. We process post text, timestamps, anonymous identifiers and display names; posts and display names are public. Reports contain the target post, reporter identifier and timestamp. Backup management also uses account identifiers, enabled status and deletion deadlines.</p><h2>Translation</h2><p>Supported app versions translate text on the device using Google ML Kit, without sending that text to a translation server. Downloading required language models needs an internet connection.</p>
 
   <h2>Advertising</h2>
   <p>The app shows ads through Google AdMob. Google serves those ads directly and may collect your advertising identifier (subject to your tracking permission), device type and OS version, IP address (used to infer a rough region), and a record of the ads you were shown and tapped.</p>
@@ -151,17 +132,10 @@
   <p>The app has no separate usage-analytics tools. It does not collect precise location, contacts, behavioural analytics, or camera and microphone input. Photos are only those you paste in yourself.</p>
 
   <h2>Why</h2>
-  <p>Solely to identify you so your saved work can be restored, and to keep it when you change device or reinstall. It is never sold or shared with third parties.</p>
-
-  <h2>Where it is stored</h2>
-  <p>Always on your device. When signed in, also on servers operated by Supabase Inc., locked by access control policies so only your account can read or write it. Photos are held in private storage. Servers may be located outside your country.</p>
-
-  <h2>Deleting your account</h2>
-  <p>In the app: <strong>right-hand menu → sign-in button at the bottom → Delete account.</strong></p>
-  <p>This permanently removes your account, everything stored in the cloud, and what is saved on the device you delete from. Content on other devices must be removed on those devices — the app cannot erase another device's storage remotely. Signing out does not delete anything.</p>
+<p>We process data to identify accounts, back up and restore work, operate Notes and reports, translate on-device, control backup access and perform scheduled deletion. We do not sell personal information. We use the service providers below to operate these features.</p><h2>Where it is stored</h2><p>Work and photos are stored locally. Supabase processes account data, backed-up decoration data, Notes and reports. Cloudflare R2 stores private photo backups, and Cloudflare Workers processes backup requests and maintains backup/deletion state. Legacy photos may remain in Supabase Storage during migration and cleanup. Private backups require account authentication; public Notes are separate. Provider servers may be outside your country.</p><h2>Retention and deletion</h2><p>Account data is retained while the account exists. Cloud backups are retained while automatic backup is enabled. Turning it off stops new uploads and schedules deletion of backed-up photos and decoration data after 90 days. Turning it back on before deletion cancels that schedule. This does not delete local device content.</p><p>Delete account is available from the signed-in account menu. Successful deletion also clears saved work on that device. Cloud photos are removed by scheduled cleanup, with retries on failure; removal from all stores is not instantaneous. Other devices must be cleared separately.</p><p>Signing out does not delete the account or backups and does not start the 90-day deadline. Notes use a separate anonymous identity and are not automatically removed by deleting a Kakao/Apple account. Posts remain until deleted by their author or the operator; related reports are deleted with the post. Hiding a post is not deletion. If you lose access to your anonymous session, email the post text and time so we can review your deletion request.</p>
 
   <h2>Your rights</h2>
-  <p>You can view your data in the app, change or delete it at any time, and stop processing by signing out or deleting your account. Contact us if you need help.</p>
+  <p>You can view your data in the app, change or delete it at any time, stop new backups by turning automatic backup off, or request deletion through account deletion or email. Contact us if you need help.</p>
 
   <h2>Children</h2>
   <p>The app is not directed at children under 14 and does not knowingly collect their information. Any such data found will be deleted promptly.</p>
